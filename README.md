@@ -1,4 +1,4 @@
-# 社交平台评论情感分析与话题聚合系统
+# 网易云音乐评论数据情感分析系统
 
 基于 FastAPI + Celery + DeepSeek LLM 的评论情感分析系统。通过抓取网易云音乐评论数据，利用大语言模型进行情感分析，输出情绪分布、关键情绪词和话题主题等分析结果。
 
@@ -8,7 +8,7 @@
 - **任务队列**：Celery + Redis
 - **数据库**：PostgreSQL + SQLAlchemy
 - **数据校验**：Pydantic V2
-- **AI 分析**：DeepSeek API（大语言模型）
+- **AI 分析**：DeepSeek API
 
 ## 系统架构
 
@@ -111,3 +111,4 @@ POST /api/v1/tasks/
     └── tasks/
         └── worker.py       # Celery 异步任务
 ```
+
